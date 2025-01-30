@@ -54,6 +54,8 @@ function startGame(userChoice) {
 
   // får computeren til at gætte
   computerGuesses();
+
+  console.log("user guesses:", userChoice);
 }
 
 // computeren vælger tilfældigt rock, paper, eller scissors - ved at vælge et tilfældigt tal 0, 1, eller 2 og koble det til choices
@@ -98,7 +100,7 @@ function determinWinner() {
 function showResult() {
   const result = determinWinner();
 
-  // skjuler alle resultater først
+  // skjuler alle resultater først for at kunne genspille
   winText.classList.add("hidden");
   loseText.classList.add("hidden");
   drawText.classList.add("hidden");
@@ -112,16 +114,10 @@ function showResult() {
     drawText.classList.remove("hidden");
   }
 
-  // fjerner de gamle klasser før man tilføjer de nye
-  player1.classList.remove("rock", "paper", "scissors");
-  player2.classList.remove("rock", "paper", "scissors");
-
   // opdater spillerens valg
   player1.classList.add(userGuess);
   player2.classList.add(computerGuess);
 
   // aktivérer knapperne igen så man kan spille igen
-  buttons.classList.remove("disabled");
-
   buttons.classList.remove("disabled");
 }
