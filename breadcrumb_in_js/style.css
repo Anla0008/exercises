@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #ffffff; /* Skift baggrundsfarven til hvid */
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,17 +10,17 @@ body {
 }
 
 main {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
+  background: none; /* Fjern baggrundsfarven */
+  border-radius: 0; /* Fjern kantens afrunding */
+  box-shadow: none; /* Fjern skyggen */
+  padding: 0; /* Fjern polstringen */
+  width: auto; /* Juster bredden */
   text-align: center;
 }
 
 h1 {
-  font-size: 24px;
-  color: #333;
+  font-size: 36px; /* Forøg skriftstørrelsen */
+  color: #000; /* Skift tekstfarven til sort */
   margin-bottom: 20px;
 }
 
@@ -37,7 +37,7 @@ nav {
 .menu li {
   display: inline;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 20px; /* Forøg skriftstørrelsen */
 }
 
 .menu li a {
@@ -51,14 +51,14 @@ nav {
 }
 
 .menu li:last-child {
-  color: #666;
-  /* Last item will be gray and not a link */
+  color: #000; /* Skift den sidste elements farve til sort */
+  /* Sidste element vil være sort og ikke et link */
 }
 
 .guess-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
+  background-color: #ffffff; /* Skift knappens baggrundsfarve til hvid */
+  color: #000; /* Skift knaptekstens farve til sort */
+  border: 1px solid #000; /* Tilføj sort kant */
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -67,5 +67,5 @@ nav {
 }
 
 .guess-btn:hover {
-  background-color: #0056b3;
+  background-color: #f0f0f0; /* Skift hover baggrundsfarven */
 }
