@@ -19,6 +19,7 @@ const texts = {
 
 const locale = "da";
 
+/* Tilføjer en event listener til elementet "language_select", som kalder funktionen "vaelgSprog" ved ændring. */
 document.getElementById("language_select").addEventListener("change", vaelgSprog);
 
 // Starter siden med "Da" som standard sprog.
