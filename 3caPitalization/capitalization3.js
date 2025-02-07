@@ -1,9 +1,9 @@
 // Laver en konstant variabel med variablen aName og værdien "Peter", som er en streng som der kan manipuleres
-const name = "Anarikke";
+const aName = "Anarikke";
 
-const thirdUpper = name.substring(0, 3).toLowerCase().concat(name[3].toUpperCase(), name.substring(4).toLowerCase());
+const thirdUpperCap = aName.substring(0, 3).toLowerCase().concat(aName[3].toUpperCase(), aName.substring(4).toLowerCase());
 
-console.log(thirdUpper);
+console.log(thirdUpperCap);
 
 // substring(0, 2) tager en del af strengen fra indeks 0 til (men ikke inklusiv) indeks 3, hvilket betyder de første tre tegn, altså "Ana".
 // toLowerCase() konverterer teksten "Ana" til små bogstaver, så resultatet bliver "ana".
