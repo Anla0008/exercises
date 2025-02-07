@@ -1,4 +1,4 @@
-// Laver en konstant variabel med variablen aName og værdien "Peter", som er en streng som der kan manipuleres
+// Laver en konstant variabel med variablen aName og værdien "Anarikke", som er en streng som der kan manipuleres
 const aName = "Anarikke";
 
 const thirdUpperCap = aName.substring(0, 3).toLowerCase().concat(aName[3].toUpperCase(), aName.substring(4).toLowerCase());
