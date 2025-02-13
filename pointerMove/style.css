@@ -1,9 +1,10 @@
 :root {
-  --lightness: 50%; /* Starter på 50% */
-  --saturation: 100%; /* Starter på 100% */
+  --lightness: 50%; /* Starter på 50% lightness */
+  --saturation: 100%; /* Starter på 100% favemætning */
 }
 
 body {
+  /* 350 fordi det er "koden" til løserød */
   background-color: hsl(350, var(--saturation), var(--lightness));
   transition: background-color 0.1s;
   height: 100vh;
