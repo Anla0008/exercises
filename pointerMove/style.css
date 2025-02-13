@@ -1,0 +1,17 @@
+:root {
+  --lightness: 50%; /* Starter på 50% */
+  --saturation: 100%; /* Starter på 100% */
+}
+
+body {
+  background-color: hsl(350, var(--saturation), var(--lightness));
+  transition: background-color 0.1s;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+}
