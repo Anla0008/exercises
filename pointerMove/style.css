@@ -1,18 +1,18 @@
 :root {
-  --lightness: 50%; /* Starter på 50% lightness */
-  --saturation: 100%; /* Starter på 100% favemætning */
+  --lightness: 70%; /* Starter på 70% lightness */
+  --saturation: 70%; /* Starter på 70% favemætning */
 }
 
 body {
   /* 350 fordi det er "koden" til løserød */
-  background-color: hsl(350, var(--saturation), var(--lightness));
+  background-color: hsl(320, var(--saturation), var(--lightness));
   transition: background-color 0.1s;
   height: 100vh;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
+  font-family: monospace;
   color: white;
   font-size: 24px;
 }

@@ -1,5 +1,5 @@
 // Funktionen der skal opdatere farverne baseret på hvor musens er.
-function updateColor(event) {
+function opdaterFarve(event) {
   const x = event.clientX; // Musens X-position
   const y = event.clientY; // Musens Y-position
   const width = window.innerWidth; // Browser vinduets bredde
@@ -14,7 +14,8 @@ function updateColor(event) {
 }
 
 // Tilføjer en event listener for musens bevægelser (position på skærmen)
-window.addEventListener("mousemove", updateColor);
+window.addEventListener("mousemove", opdaterFarve);
 
 // X-position styrer lysstyrke (lys styrke), Y-position styrer farvemætning (saturation).
+
 // CSS-variablerne opdateres med style.setProperty() når musen flyttes.
